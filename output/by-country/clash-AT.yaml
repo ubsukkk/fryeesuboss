@@ -33,18 +33,15 @@ proxies:
   sni: filesconvert.org
   skip-cert-verify: true
 - name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: 45.86.245.107
-  port: 5865
+  server: at-at-at-new.failspace.top
+  port: 443
   udp: true
   type: vless
-  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 1UlHWXQ11dMmBYHq7XYsyKnfPVGTh9UssmiJE_zRnjI
-    short-id: a4f7c2e91b6d8035
-  servername: ru.vkroom-it-service.xyz
-  client-fingerprint: firefox
+  servername: at-at-at-new.failspace.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

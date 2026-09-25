@@ -6,52 +6,63 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "45.130.125.207",
-      "server_port": 8443,
-      "uuid": "31aa0950-eb19-45ff-94a2-af416deb3b90",
+      "server": "193.56.135.212",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "square-salad-ebde.zdfgvccfguuyggg.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇶 IQ 02 - xiaohe",
-      "server": "188.114.96.0",
-      "server_port": 443,
-      "password": "f88f080e9b4f66c6",
+      "server": "193.56.135.137",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "oPEN-39.avl-a47261.WoRKeRs.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/Mg56mvTz944kOMHGyd2UYtG?ed=2560",
-        "headers": {
-          "Host": "open-39.avl-a47261.workers.dev"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03 - xiaohe",
+      "server": "193.56.135.233",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcde"
         }
       }
     },
@@ -61,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe",
+        "🇮🇶 IQ 03 - xiaohe"
       ]
     },
     {
@@ -69,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇶 IQ 01 - xiaohe",
-        "🇮🇶 IQ 02 - xiaohe"
+        "🇮🇶 IQ 02 - xiaohe",
+        "🇮🇶 IQ 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
