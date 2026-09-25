@@ -34,7 +34,7 @@
       "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1 ",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
         "headers": {
           "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
         }
