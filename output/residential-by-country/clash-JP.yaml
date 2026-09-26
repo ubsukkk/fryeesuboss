@@ -5,34 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 128.241.25.3
-  port: 30021
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: c927eaeb-e48f-4fc0-8cec-894831ab16bc
+  uuid: fbc881d2-505b-45e6-a57e-ac2003288e54
   tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  server: 129.153.71.28
-  port: 28863
+  server: 147.45.42.73
+  port: 20443
   udp: true
   type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
   tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
