@@ -4,28 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇺 MU 01 - xiaohe
-  server: 89.117.112.40
-  port: 8880
+- name: 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
+  server: 157.137.224.224
+  port: 62145
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime11.workers.dev
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇺 MU 01 - xiaohe
+  - 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇺 MU 01 - xiaohe
+  - 🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
