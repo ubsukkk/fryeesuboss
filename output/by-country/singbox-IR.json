@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR 02 - xiaohe",
-      "server": "afra4.nimbaha9.ir",
+      "server": "185.143.233.130",
       "server_port": 2052,
       "uuid": "e0ff8a9b-dad3-4671-baf4-c8d466d1eb48",
       "transport": {

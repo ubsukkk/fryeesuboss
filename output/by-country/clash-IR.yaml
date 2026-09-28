@@ -18,7 +18,7 @@ proxies:
   servername: table.vkroom-it-service.xyz
   client-fingerprint: chrome
 - name: 🇮🇷 IR 02 - xiaohe
-  server: afra4.nimbaha9.ir
+  server: 185.143.233.130
   port: 2052
   udp: true
   type: vless
