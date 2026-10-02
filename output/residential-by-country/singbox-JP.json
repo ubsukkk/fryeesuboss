@@ -5,18 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe",
-      "server": "aken.nightfall.best",
-      "server_port": 443,
-      "uuid": "af2bf319-ba88-4fec-8317-2b6a8cee96d1",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "d0130b90-7d09-4484-9809-426bfb6ebd6d",
       "tls": {
         "enabled": true,
-        "server_name": "aken.nightfall.best",
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
         "insecure": false
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "rdamrwhuacfl"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
       }
     },
     {
@@ -24,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

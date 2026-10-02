@@ -5,29 +5,56 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 85.117.235.50
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
+  network: ws
+  ws-opts:
+    path: /vl/zXLTmz3hE3szn64f
+    headers:
+      Host: l0n0qgkdttu061g57fhqzbet333s4t.ade-1004.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 172.67.194.138
   port: 443
   udp: true
   type: vless
-  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
-  flow: xtls-rprx-vision
+  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
   tls: true
-  reality-opts:
-    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
-    short-id: 232b1b09e45325a4
-  servername: cz1.animeteka.info
-  client-fingerprint: random
+  servername: restless-base-fe24.alirezahabibi20009.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-base-fe24.alirezahabibi20009.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: 104.21.39.30
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTEwyZVI5T3BYZDBxTzhPRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
