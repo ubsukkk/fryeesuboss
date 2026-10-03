@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 140.245.120.16
+  server: trackydev.site
   port: 443
   udp: true
   type: vless
@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: trackydev.site
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
@@ -26,6 +25,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
