@@ -6,21 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "cctvhikvision.center",
-      "server_port": 2053,
+      "server": "uwu.blueknightnet.qzz.io",
+      "server_port": 2052,
       "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
           "Host": "uwu.blueknightnet.qzz.io"
         }
@@ -29,19 +20,19 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "cctvhikvision.center",
-      "server_port": 2053,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "server": "www.5199dy.com",
+      "server_port": 8443,
+      "uuid": "ce0cf224-1d6e-466e-a7e3-55aead76afed",
       "tls": {
         "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
+        "server_name": "aaa.abcai.online",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "path": "/vless-argofp=chrome",
         "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+          "Host": "aaa.abcai.online"
         }
       }
     },

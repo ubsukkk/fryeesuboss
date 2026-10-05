@@ -28,15 +28,19 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 162.249.127.130
-  port: 8081
+  server: tr.xelnivo.ir
+  port: 5589
   udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
+  type: vless
+  uuid: e40131eb-087a-48e1-9d0d-c7db5049ce1f
+  tls: true
+  reality-opts:
+    public-key: rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014
+    short-id: 8f798d413a5dbf01
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 85.192.48.142
   port: 443
@@ -49,7 +53,7 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: ''
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
