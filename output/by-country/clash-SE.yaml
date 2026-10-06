@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 132.243.231.12
+  server: 132.243.231.4
   port: 443
   udp: true
   type: vless
@@ -33,15 +33,28 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 77.110.96.201
-  port: 36264
+  server: 94.143.231.146
+  port: 443
   udp: true
-  type: hysteria2
-  password: Telegram-vpnjey
-  sni: se.vpnjey2.dpdns.org
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 211.20.156.191
+  port: 28120
+  udp: true
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +63,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
 rules:
 - MATCH,PROXIES
