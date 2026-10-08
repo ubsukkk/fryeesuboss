@@ -36,7 +36,7 @@
         "server_name": "es.srv.dvzh.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
