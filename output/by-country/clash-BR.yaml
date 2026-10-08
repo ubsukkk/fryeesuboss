@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: brb.nnpy.org
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
