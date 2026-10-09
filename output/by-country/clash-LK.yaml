@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 188.114.97.6
-  port: 443
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
+  uuid: 2d7a04af-3ac8-40e7-aff0-9f58b2be6405
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /
     headers:
-      Host: ccs2g.pai50288.uk
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 rules:
 - MATCH,PROXIES
