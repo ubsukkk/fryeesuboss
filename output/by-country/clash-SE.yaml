@@ -5,20 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 191.44.114.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oT9R1OPLe1DlvnRK9sXmUH7_bXQ8LcbqEZRCCw4gXgA
-    short-id: af01c62234f5a7b5
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: se3.h1cloud.net
+  server: 136.148.223.212
   port: 25119
   udp: true
   type: vless
@@ -29,6 +16,19 @@ proxies:
     public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
     short-id: 10f517
   servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 62.60.159.81
@@ -41,31 +41,43 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 144.31.62.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 13.143.174.151
+  server: sweedenqfds777.qcloud.surf
   port: 21223
   udp: true
   type: hysteria2
   password: 8bd04756-3beb-4348-82c9-d35453df50ce
   sni: sweedenqfds777.qcloud.surf
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: 191.44.114.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oT9R1OPLe1DlvnRK9sXmUH7_bXQ8LcbqEZRCCw4gXgA
+    short-id: af01c62234f5a7b5
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +88,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +99,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 rules:
 - MATCH,PROXIES
