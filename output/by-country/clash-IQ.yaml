@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.70.223
-  port: 443
+  server: 104.21.70.21
+  port: 8080
   udp: true
   type: vless
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
-  tls: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+      Host: 057.electrocellco-cf-057.workers.dev
 - name: 🇮🇶 IQ 02 - xiaohe
   server: 178.17.57.120
   port: 40443

@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 8080
+  server: 104.21.31.137
+  port: 443
   udp: true
   type: vless
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  uuid: 59c70620-d2f3-4255-9d6f-f4c5103d64ce
+  tls: true
+  servername: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+      Host: 59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 95.85.238.173
   port: 443
