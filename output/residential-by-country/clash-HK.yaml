@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: t4.qifei.app
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless
@@ -14,8 +14,9 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
