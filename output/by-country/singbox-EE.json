@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -15,7 +27,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
       "server": "185.252.177.216",
       "server_port": 443,
       "uuid": "616c7b3b-41f4-4038-88c6-d6fedd0ae4a7",
@@ -36,81 +64,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "77.72.85.247",
-      "server_port": 8443,
-      "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03",
-      "tls": {
-        "enabled": true,
-        "server_name": "fdghyt.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
-        "headers": {
-          "Host": "fdghyt.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-      "server": "ee-1-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-1-1.unturned-rust-dead.lol",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
-          "short_id": ""
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "ee-grpc"
+        "type": "ws",
+        "path": "/vless-ee",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
       }
     },
     {
@@ -125,7 +117,7 @@
         "server_name": "ibm.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -137,24 +129,40 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
-      "server": "87.228.33.153",
-      "server_port": 6443,
-      "uuid": "7b859f9e-0e6a-475f-b5e3-5d671b043164",
+      "server": "185.31.242.61",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "for.cloudgamings.org",
-        "insecure": false,
+        "server_name": "est.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0",
+          "short_id": "0da7e14db353e7d0"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe",
-      "server": "143.246.41.31",
+      "server": "185.91.52.139",
+      "server_port": 443,
+      "password": "dKn7hqgST668mj_8EgoMUd3_zPSxnTFQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "isq.ichost.cloud",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe",
+      "server": "ees92.shhflow.xyz",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
       "flow": "xtls-rprx-vision",
@@ -163,7 +171,7 @@
         "server_name": "ees92.shhflow.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -185,7 +193,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe"
       ]
     },
     {
@@ -200,7 +209,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
