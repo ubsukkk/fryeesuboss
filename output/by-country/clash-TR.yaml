@@ -55,7 +55,17 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +75,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +85,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
