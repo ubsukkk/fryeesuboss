@@ -4,21 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  server: v10.hdacd.com
+  port: 30807
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: hinet1.2yly.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: 118.167.248.243
   port: 24215
   udp: true
   type: vless
@@ -27,22 +51,34 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
