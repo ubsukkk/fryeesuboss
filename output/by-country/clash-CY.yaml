@@ -15,21 +15,8 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: 185.166.154.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
   client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 185.76.241.49
   port: 443
   udp: true
@@ -42,7 +29,7 @@ proxies:
     short-id: b927c029ece94e02
   servername: ru-in-est-4vp.movietop24.site
   client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 77.110.105.122
   port: 443
   udp: true
@@ -53,12 +40,12 @@ proxies:
   servername: co-pl.speedtec.ru
   skip-cert-verify: false
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
-  server: 5.253.28.240
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  server: 5.253.30.99
   port: 40443
   udp: true
   type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -66,21 +53,8 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
-  server: 81.94.148.50
-  port: 7449
-  udp: true
-  type: vless
-  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0
-    short-id: 7abd137540629e9d
-  servername: passport.yandex.ru
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
-  server: 5.253.28.240
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - xiaohe
+  server: hydra.yokkastars.com
   port: 2443
   udp: true
   type: vless
@@ -94,6 +68,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 06 - xiaohe
+  server: cdn.bulkavpn.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
+    short-id: 94f32cfc
+  servername: cdn.bulkavpn.top
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 07 - xiaohe
+  server: 81.94.148.50
+  port: 7449
+  udp: true
+  type: vless
+  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0
+    short-id: 7abd137540629e9d
+  servername: passport.yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

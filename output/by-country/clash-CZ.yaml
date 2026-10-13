@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: netra-85a0ca.shoameni19.workers.dev
+  server: 172.67.173.89
   port: 443
   udp: true
   type: vless
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
   tls: true
-  servername: netra-85a0ca.shoameni19.workers.dev
+  servername: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui?ed=2560
+    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    headers:
+      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 195.123.245.241
   port: 443
