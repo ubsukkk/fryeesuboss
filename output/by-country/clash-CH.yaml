@@ -5,27 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 132.243.175.144
-  port: 8388
+  server: 208.69.78.217
+  port: 21090
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: d279f394-301e-4cbf-ba56-65e8c061e451
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -37,7 +26,7 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 45.90.59.15
   port: 443
   udp: true
@@ -49,36 +38,18 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
+  server: 208.69.78.217
+  port: 33042
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 208.69.78.217
-  port: 21021
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  server: 208.69.78.217
-  port: 21054
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -93,52 +64,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: e431e7d1-2bbe-4907-8015-29f05d3558ac
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: a42ba501-2628-40ab-87ad-cf77adc46f67
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  server: ch.srv.vbuste.ru
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: ch.srv.vbuste.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: 138.124.96.88
   port: 41826
   udp: true
@@ -153,24 +79,9 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  server: 57.129.130.200
-  port: 52014
-  udp: true
-  type: vless
-  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   server: 208.69.78.217
-  port: 21161
+  port: 33013
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -178,64 +89,21 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  server: br.urobotix.tech
-  port: 443
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: vless
-  uuid: 7b9b233c-c646-4859-88b2-2a55695c6487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jQx41aPKBwFCRKregjdLMmwo4ShIYfjHWIMIl-0HJhc
-    short-id: 288d01b5
-  servername: br.urobotix.tech
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  server: 45.77.241.190
-  port: 8441
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
+  server: 140.238.213.114
+  port: 50160
   udp: true
-  type: vless
-  uuid: 95162241-dd8b-4438-a3da-7858d06e6ace
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  server: 185.220.68.226
-  port: 20205
-  udp: true
-  type: vless
-  uuid: 282733b7-3cd4-4fa3-b6bd-beff60052f31
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
-  server: 175.41.179.37
-  port: 51262
-  udp: true
-  type: vless
-  uuid: df670f1e-2031-4363-8497-0f3a9f32914a
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -250,15 +118,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -273,14 +132,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
 rules:
 - MATCH,PROXIES
