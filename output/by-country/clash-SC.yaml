@@ -9,11 +9,11 @@ proxies:
   port: 10443
   udp: true
   type: trojan
-  password: ef745e15-b65e-4d87-bfd8-0e54b29fb1dd
+  password: 89328c27-801d-4d8b-823b-2d6d10d2ea75
   sni: 45.205.27.78
   skip-cert-verify: true
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 156.226.168.221
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -25,12 +25,6 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 45.137.43.168
-  port: 10443
-  udp: true
-  type: vless
-  uuid: b4cc503a-c352-4775-85ad-fc982086884a
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 rules:
 - MATCH,PROXIES
