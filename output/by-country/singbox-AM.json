@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "103.172.197.3",
-      "server_port": 16006,
-      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
+      "server": "88.218.95.88",
+      "server_port": 443,
+      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
-          "short_id": ""
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "43adea0ec9f97a0a"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

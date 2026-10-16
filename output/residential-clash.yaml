@@ -14,35 +14,24 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  server: 104.21.78.9
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: 5ffee9b2-4514-4719-97b3-67810ece038d
-  tls: true
-  servername: ali-panel-1.terhav.workers.dev
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vertex
-    headers:
-      Host: ali-panel-1.terhav.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  server: 218.237.185.234
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -52,46 +41,24 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - xiaohe
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 07 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (移动家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

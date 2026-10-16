@@ -17,17 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: 137.131.171.249
-  port: 20000
-  udp: true
-  type: hysteria2
-  password: CyG0RFxMjzs41uQD4OLuHQ==
-  sni: rmgyvpn.rest
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
-  ports: 20000-30000
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -38,6 +27,17 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  server: 137.131.171.249
+  port: 20000
+  udp: true
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
 proxy-groups:
 - name: PROXIES
   type: select
