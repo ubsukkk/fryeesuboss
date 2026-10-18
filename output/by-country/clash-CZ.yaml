@@ -33,7 +33,7 @@ proxies:
   tls: true
   servername: node-3.wt419.site
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy

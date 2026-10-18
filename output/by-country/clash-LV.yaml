@@ -19,12 +19,19 @@ proxies:
   client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 185.135.86.175
-  port: 9017
+  port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: lv.aiage.work
   port: 443
   udp: true
@@ -36,14 +43,7 @@ proxies:
     public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
   server: 185.135.86.175
   port: 9033
@@ -52,20 +52,6 @@ proxies:
   cipher: aes-256-cfb
   password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   server: 138.124.180.137
   port: 443
   udp: true
@@ -77,16 +63,36 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
-  server: 193.233.88.26
-  port: 443
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe
+  server: 185.135.86.175
+  port: 9082
   udp: true
-  type: hysteria2
-  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
-  sni: ru1server.rabstvo.shop
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
   server: 195.123.208.32
   port: 443
   udp: true
@@ -98,7 +104,29 @@ proxies:
     public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  server: 94.158.219.126
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
+  server: 94.158.219.126
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +142,9 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,5 +160,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe
 rules:
 - MATCH,PROXIES
