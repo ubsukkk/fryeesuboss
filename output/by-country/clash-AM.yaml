@@ -9,7 +9,7 @@ proxies:
   port: 53183
   udp: true
   type: vmess
-  uuid: 2cb092f6-d62c-4e8c-a9f2-db9d46f42de7
+  uuid: a3f95685-6d84-4625-a0ea-8a10e7d26d89
   alterId: 0
   cipher: auto
 proxy-groups:
