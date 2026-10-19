@@ -19,17 +19,25 @@ proxies:
     path: /vlessvina
     headers:
       Host: vn11vina.210z.dev
+- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 02 - xiaohe
 rules:
 - MATCH,PROXIES

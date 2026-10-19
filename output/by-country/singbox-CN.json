@@ -11,8 +11,7 @@
       "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
       "security": "auto",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {

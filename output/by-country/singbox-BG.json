@@ -4,24 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "server": "88.216.69.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime06.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -29,7 +27,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
       "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
@@ -42,8 +40,7 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ]
     },
     {
@@ -52,8 +49,7 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -34,7 +34,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "free.sahanwickramasinghe.me"
         }
