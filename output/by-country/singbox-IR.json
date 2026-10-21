@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "tun2.w-ert.org",
+      "server_port": 42924,
+      "uuid": "3e16033f-71d8-417b-abea-7756253f3c3d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU",
+          "short_id": "ca4134a0ed2592b6"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇷 IR 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇷 IR 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
