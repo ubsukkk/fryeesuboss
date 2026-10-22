@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 13.60.198.133
+  server: substack.com
   port: 443
   udp: true
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  tls: true
+  servername: wallweb-4ez.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
     path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 51.21.247.148
   port: 443
@@ -25,6 +30,23 @@ proxies:
     host: []
     path: /
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 13.60.198.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -33,7 +55,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   server: 77.110.96.201
   port: 36264
   udp: true
@@ -43,6 +67,21 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +91,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +103,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES
