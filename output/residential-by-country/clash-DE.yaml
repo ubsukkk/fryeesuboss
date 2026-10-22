@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: 188.114.96.9
-  port: 443
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  server: 209.38.238.229
+  port: 20202
   udp: true
   type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/9yvcoldzdoxluyfh7r5gwjhu1chrj
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

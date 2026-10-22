@@ -7,17 +7,20 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
       "server": "5.188.181.201",
-      "server_port": 9019,
+      "server_port": 9005,
       "method": "aes-256-cfb",
-      "password": "GA9KzeEgvfxNrgmM"
+      "password": "ZET59LF6DvCC8KVt"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "5.188.181.201",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "server": "5.22.212.81",
+      "server_port": 8080,
+      "uuid": "7f36e606-3eb9-4b60-b783-8d8806818286",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "vless",
@@ -30,7 +33,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -42,6 +45,27 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
       "server": "83.147.18.3",
       "server_port": 443,
       "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
@@ -62,48 +86,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "45.198.54.249",
-      "server_port": 443,
-      "uuid": "8d4c35bd-d04a-43fe-8390-47133ab90dbf",
-      "tls": {
-        "enabled": true,
-        "server_name": "6a4a06t.es3.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rHCPMrwRVCwxdwv4YOCso7zlYTPoX8w7x1f5Yqv2bGM",
-          "short_id": "b73ab21227d33c1e"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -132,8 +115,7 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ]
     },
     {
@@ -145,8 +127,7 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
