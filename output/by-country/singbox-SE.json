@@ -28,8 +28,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
+      "server": "185.58.115.62",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se2.gderevievsvideos.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -44,50 +65,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "177.3.209.20",
-      "server_port": 443,
-      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swself2.yandex-api.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HXFe_cPryw01zqXchAFjZciDAS4UJg1-xScx6vjgjjY",
-          "short_id": "7f2e9c4b1a8d6e25"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,8 +72,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ]
     },
     {
@@ -106,8 +82,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

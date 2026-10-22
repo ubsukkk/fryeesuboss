@@ -26,6 +26,19 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 185.58.115.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: se2.gderevievsvideos.fyi
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 77.110.96.201
   port: 36264
   udp: true
@@ -35,34 +48,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 177.3.209.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HXFe_cPryw01zqXchAFjZciDAS4UJg1-xScx6vjgjjY
-    short-id: 7f2e9c4b1a8d6e25
-  servername: swself2.yandex-api.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +57,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +66,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
 rules:
 - MATCH,PROXIES

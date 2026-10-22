@@ -28,9 +28,12 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

@@ -38,11 +38,18 @@
       "tls": {
         "enabled": true,
         "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {

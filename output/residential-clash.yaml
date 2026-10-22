@@ -4,79 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
-  server: 209.38.238.229
-  port: 20202
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: 9641684.sdf65h4.top
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
   udp: true
   type: vmess
-  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-  tls: true
-  servername: 9641684.sdf65h4.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
