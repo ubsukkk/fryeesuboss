@@ -16,7 +16,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 152.67.115.203
   port: 443
@@ -37,30 +37,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
-- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  server: forwarded.frnhk.xyz
-  port: 46004
-  udp: true
-  type: vless
-  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
-  network: ws
-  ws-opts:
-    path: /aus1023
-    headers:
-      Host: forwarded.frnhk.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  server: funagfrdfs.alixxplay.com
-  port: 54528
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,8 +45,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,7 +53,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
