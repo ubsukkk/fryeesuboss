@@ -15,7 +15,7 @@
         "server_name": "login.sakhweb.fyi",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

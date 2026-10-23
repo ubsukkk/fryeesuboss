@@ -32,6 +32,13 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +58,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
 rules:
 - MATCH,PROXIES

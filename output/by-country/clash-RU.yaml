@@ -5,6 +5,56 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  server: 188.114.96.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  tls: true
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrjfp=chrome
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 77.74.228.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime58.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 45.128.78.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 77.90.61.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  tls: true
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 113.30.154.239
   port: 8443
   udp: true
@@ -16,26 +66,14 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 45.128.78.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 195.58.49.34
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -49,69 +87,28 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 46.254.17.88
-  port: 30065
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  servername: a3.eosapp.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 95.182.120.128
+  server: 45.91.52.28
   port: 443
   udp: true
   type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
+  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
   tls: true
   reality-opts:
-    public-key: 7MRwvMvlDcjZqfdbBmePpZI5WDEYgya1y_pOp7B9CDc
-    short-id: d0dc65ab94f5e69b
-  servername: api.stride.surf
-  client-fingerprint: firefox
+    public-key: _UKyZZvF2cvo6qev4VY-QoOyzqE8cGT3hciD0g--sD8
+    short-id: 07e197719352d606
+  servername: 0f5857g.msk1.h1clayd.click
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fb78f1bc0355
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 45.12.75.242
-  port: 26424
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   server: du-rov.secureservice.top
   port: 8443
@@ -126,36 +123,55 @@ proxies:
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  server: 9f6635t.msk1.h1clayd.click
-  port: 443
+  server: 5.42.99.64
+  port: 8443
   udp: true
   type: vless
-  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
-    short-id: 0ea5f9d7955c3971
-  servername: 9f6635t.msk1.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
+  server: 46.254.17.88
+  port: 30065
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: a3.eosapp.net
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
+  server: xsru1.ddnsfree.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,6 +190,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,5 +209,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
 rules:
 - MATCH,PROXIES
