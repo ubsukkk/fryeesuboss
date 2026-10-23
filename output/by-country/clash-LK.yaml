@@ -24,9 +24,12 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
