@@ -15,7 +15,7 @@
         "server_name": "yw0ein72.cloudydigital.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "hk1.frnhk.xyz",
+      "server": "144.31.50.236",
       "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.uni-frankfurt.de",
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gXOQOlynAB6Znbp902LRyX7eYSxTWrj7D2nRCB1gNmE",
-          "short_id": "6b7a8c9d"
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
         }
       }
     },
