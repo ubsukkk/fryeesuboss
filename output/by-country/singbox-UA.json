@@ -25,8 +25,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
+      "server": "staging.lastilhame.monster",
+      "server_port": 49917,
+      "method": "chacha20-ietf-poly1305",
+      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
       "server": "netx.smrtai.top",
       "server_port": 443,
       "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
@@ -46,22 +54,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
-      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
+      "uuid": "aded66f1-de12-4c3c-af9e-a21d6e7d9c96",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "fc994ae7eb10"
+          "short_id": "2a80364e93d9"
         }
       }
     },
@@ -72,7 +80,8 @@
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
         "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe"
       ]
     },
     {
@@ -81,7 +90,8 @@
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
         "🇺🇦 乌克兰 (Ukraine) 02 - xiaohe",
-        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe"
+        "🇺🇦 乌克兰 (Ukraine) 03 - xiaohe",
+        "🇺🇦 乌克兰 (Ukraine) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
