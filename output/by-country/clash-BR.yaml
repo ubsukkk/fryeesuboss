@@ -27,13 +27,6 @@ proxies:
     public-key: jkVcZ_b3iWs2FcSjC8Mb1NoRuwPgCH9HpeOOYAXBSU0
   servername: ru-hub10.lovely.my
   client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
-  server: 216.128.168.190
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES
