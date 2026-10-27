@@ -17,7 +17,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 45.90.59.15
@@ -33,23 +33,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 80.240.18.227
-  port: 10051
+  server: 45.90.57.119
+  port: 8443
   udp: true
   type: vless
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  flow: xtls-rprx-vision
   tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
+    short-id: 16036bbef04d0509
+  servername: twitch.tv
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: '/@Marisa_kristi '
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   server: 208.69.78.217
-  port: 33117
+  port: 33141
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -58,31 +56,6 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 144.31.135.38
-  port: 9444
-  udp: true
-  type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  server: 208.69.78.217
-  port: 21047
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   server: 208.69.78.217
   port: 33130
   udp: true
@@ -92,94 +65,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
-  server: 208.69.78.217
-  port: 33187
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 07d3f54d-a59f-44e6-9ba7-c0440ffa799c
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
-  server: 208.69.78.217
-  port: 21147
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  server: 208.69.78.217
-  port: 21000
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
-- name: 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  server: 208.69.78.217
-  port: 21016
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  server: 208.69.78.217
-  port: 33092
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  server: 208.69.78.217
-  port: 33013
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
   server: 208.69.78.217
   port: 21067
   udp: true
@@ -189,9 +75,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
   server: 208.69.78.217
-  port: 21113
+  port: 21046
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -199,9 +85,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaohe
   server: 208.69.78.217
-  port: 21086
+  port: 21158
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -209,7 +95,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
+  server: 208.69.78.217
+  port: 21021
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
   server: 208.69.78.217
   port: 8444
   udp: true
@@ -219,29 +115,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
+- name: 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
   server: 208.69.78.217
-  port: 33152
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
-  server: 208.69.78.217
-  port: 33044
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
-  server: 208.69.78.217
-  port: 21161
+  port: 21090
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -266,17 +142,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -294,16 +159,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 10 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 11 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 12 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaohe
 rules:
 - MATCH,PROXIES
