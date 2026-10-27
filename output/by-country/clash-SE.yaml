@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 50.7.38.243
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 136.148.218.108
   port: 443
   udp: true
@@ -27,19 +19,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-se-3
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 89.125.37.91
-  port: 41445
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: f12d0220-e1de-4232-bcef-7e5a12f05062
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: 191.44.114.179
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Ux2M6x46mIcoAoP2oCA8qEQnqc1O5cpa5zYRIdCNdnw
-    short-id: 7a3f9e2b1c8d4f6a
-  servername: se.s3-cloud.org
-  client-fingerprint: chrome
+    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
+  servername: www.wikipedia.org
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 191.44.114.154
   port: 8443
@@ -54,42 +56,34 @@ proxies:
   servername: www.wikipedia.org
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 191.44.114.179
-  port: 2096
+  server: promo.betust.net
+  port: 443
   udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st33614.rumedia-cdn.com
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
-  server: 5.178.109.174
-  port: 14430
+  server: 201.58.177.159
+  port: 4443
   udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  type: hysteria2
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  sni: se3.shvpn.ru
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  server: 191.44.114.179
-  port: 8443
+  server: 193.188.21.253
+  port: 10444
   udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
-  servername: www.wikipedia.org
-  client-fingerprint: firefox
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
