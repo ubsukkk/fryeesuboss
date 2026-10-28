@@ -6,25 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "support.zoom.us.v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -35,17 +16,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "38.60.254.50",
       "server_port": 22222,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
         "server_name": "th001.zestapp778.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "104.16.111.193",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
         }
       }
     },
@@ -71,27 +71,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaohe",
-      "server": "154.21.203.106",
-      "server_port": 21033,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.kaidee.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
-          "short_id": "cbd39bea0805e2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -99,8 +78,7 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
       ]
     },
     {
@@ -110,8 +88,7 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
         "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
