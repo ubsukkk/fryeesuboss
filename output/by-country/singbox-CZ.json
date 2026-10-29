@@ -15,7 +15,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -57,7 +57,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -71,11 +71,11 @@
       "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
       "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
+      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -83,7 +83,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "d659da01fb94"
+          "short_id": "2a2ce9e42980"
         }
       }
     },
