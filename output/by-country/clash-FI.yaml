@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 153.76.194.118
   port: 8443
   udp: true
@@ -12,36 +20,20 @@ proxies:
   password: 7d43670b-6b08-45b9-8a24-8f3971abc132
   sni: finland.biznes.lol
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 31.77.199.147
-  port: 4443
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 78.17.27.137
+  port: 8443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+    short-id: a05ccbf2edb5ebd1
+  servername: www.aalto.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -56,18 +48,26 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 78.17.27.137
+  server: 6.bmi.ir.asopardaz.ir
+  port: 35176
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:YzYxMzAwMWNiMDYyNDFhZDhkYjdmNmEzZWIwNmY2MmM=
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 6.bmi.ir.asopardaz.ir
   port: 8443
   udp: true
   type: vless
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  uuid: c613001c-b062-41ad-8db7-f6a3eb06f62c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-    short-id: a05ccbf2edb5ebd1
-  servername: www.aalto.fi
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: hostgator.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -89,6 +89,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +101,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
 rules:
 - MATCH,PROXIES
