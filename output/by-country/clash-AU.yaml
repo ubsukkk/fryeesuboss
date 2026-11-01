@@ -5,16 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 23.227.60.30
-  port: 8880
+  server: 152.67.115.203
+  port: 443
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime18.workers.dev
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 45.63.30.142
   port: 443

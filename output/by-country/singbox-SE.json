@@ -44,37 +44,21 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-      "server": "83.166.237.167",
+      "server": "swidenafterlanzerotte.space",
       "server_port": 443,
-      "uuid": "902e7be9-d0a8-42a6-994f-8320916a9d9e",
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pine.gaznw.my",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU",
-          "short_id": "46da9a2868751b85"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "static.fatcutecat.net",
-      "server_port": 443,
-      "uuid": "b95eb0b3-a8dc-41ce-8bc0-888f81731e7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.fatcutecat.net",
-        "insecure": false,
+        "server_name": "swidenafterlanzerotte.space",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
         }
       }
     },
@@ -86,8 +70,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ]
     },
     {
@@ -97,8 +80,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
