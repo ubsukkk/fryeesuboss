@@ -22,40 +22,14 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+  uuid: ee39fb11-56a3-4ee7-9e7c-35a4235bd30e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5c8a8e6c615b
-  servername: www.mozilla.org
+    short-id: b27ba098687b
+  servername: www.tradingview.com
   client-fingerprint: firefox
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  server: 104.253.216.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: 455cfdc6-9abf-4e40-863f-5ff6cc63457c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 18e4d2d21241
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
-  server: staging.lastilhame.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: 455cfdc6-9abf-4e40-863f-5ff6cc63457c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 18e4d2d21241
-  servername: www.microsoft.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
   - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 04 - xiaohe
 rules:
 - MATCH,PROXIES
