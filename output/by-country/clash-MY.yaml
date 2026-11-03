@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
 - name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
-  server: xunlinknode.csdjhajkshdjkas.com
+  server: 58.152.58.193
   port: 40006
   udp: true
   type: ss
