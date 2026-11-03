@@ -20,12 +20,25 @@
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
+      "type": "hysteria2",
+      "tag": "🇿🇦 南非 (South Africa) 03 - xiaohe",
+      "server": "102.208.216.88",
+      "server_port": 8443,
+      "password": "1793747701:04cbffa7-bd2c-4a51-bf32-2253f4fbc1ab:cv_QNzenE8BtqjxU5H4mzZ7ki0M4jLW2DCs01wdD78Y",
+      "tls": {
+        "enabled": true,
+        "server_name": "za2.lumacache.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
-        "🇿🇦 南非 (South Africa) 02 - xiaohe"
+        "🇿🇦 南非 (South Africa) 02 - xiaohe",
+        "🇿🇦 南非 (South Africa) 03 - xiaohe"
       ]
     },
     {
@@ -33,7 +46,8 @@
       "tag": "auto",
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
-        "🇿🇦 南非 (South Africa) 02 - xiaohe"
+        "🇿🇦 南非 (South Africa) 02 - xiaohe",
+        "🇿🇦 南非 (South Africa) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
