@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.4.115.149
-  port: 1346
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,6 +16,14 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 92.242.165.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 2f0fccb6-4a86-4d9f-9e03-a2dfee6ed7f5
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.144.234.157
   port: 14430
@@ -75,6 +76,29 @@ proxies:
     headers:
       Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: mein-1.octavia.dpdns.org
+  port: 60000
+  udp: true
+  type: hysteria2
+  password: xo43w4tc13ou2h3x
+  sni: main-1.octavia.dpdns.org
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: ckwudzzsfoltmbmi
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
   server: 188.114.96.3
   port: 2053
   udp: true
@@ -97,6 +121,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +135,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
