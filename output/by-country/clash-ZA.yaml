@@ -18,14 +18,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
-  server: 102.208.216.88
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 1793747701:04cbffa7-bd2c-4a51-bf32-2253f4fbc1ab:cv_QNzenE8BtqjxU5H4mzZ7ki0M4jLW2DCs01wdD78Y
-  sni: za2.lumacache.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
-  - 🇿🇦 南非 (South Africa) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - xiaohe
   - 🇿🇦 南非 (South Africa) 02 - xiaohe
-  - 🇿🇦 南非 (South Africa) 03 - xiaohe
 rules:
 - MATCH,PROXIES
