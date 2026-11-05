@@ -24,8 +24,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "mein-1.octavia.dpdns.org",
+      "server_port": 60000,
+      "password": "xo43w4tc13ou2h3x",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-1.octavia.dpdns.org",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "ckwudzzsfoltmbmi"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -39,29 +55,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "217.144.188.185",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
+      "server": "146.103.118.189",
       "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
       "tls": {
         "enabled": true,
-        "server_name": "www.nordea.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/574ck-finland",
+        "headers": {
+          "Host": "nl2.574ck.xyz"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "172.66.0.1",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
+      "server": "188.114.96.3",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -85,46 +99,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "89.144.53.4",
-      "server_port": 8445,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "videos.porsche.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaohe",
-      "server": "latvia.zovip2.ir",
-      "server_port": 443,
-      "uuid": "2a6ac8b1-a485-49d2-97be-20d2759312e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "tr7.zovip2.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v3/pulse",
-        "headers": {
-          "Host": "tr7.zovip2.ir"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -133,8 +107,7 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
       ]
     },
     {
@@ -145,8 +118,7 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
         "🇫🇮 芬兰 (Finland) 03 - xiaohe",
         "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 06 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

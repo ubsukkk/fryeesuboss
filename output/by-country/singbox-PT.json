@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1348,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK"
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
+      "server": "185.231.233.91",
+      "server_port": 17167,
+      "method": "aes-128-gcm",
+      "password": "d925ddb6fe1e6e62887cf3dc3f5137f3"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
