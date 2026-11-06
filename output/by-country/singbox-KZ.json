@@ -14,28 +14,29 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "38.107.234.57"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "server": "95.57.50.87",
+      "server_port": 443,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false,
+        "server_name": "kz1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
+          "short_id": "4000cdda6278d236"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
       }
     },
     {

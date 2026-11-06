@@ -4,88 +4,68 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "210.0.244.157",
-      "server_port": 443,
-      "uuid": "f3ff9bac-2904-4f38-bae1-54ab1a72891b",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-      "server": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "19dd9c70-e4a5-11ed-8347-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
-      "server": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
+      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "526a1128-7487-11ee-9bca-f23c913c8d2b",
+      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
-      "server": "202.146.222.29",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
+      "server": "112.120.123.140",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2ðð",
-        "insecure": true
+        "server_name": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
       "server": "85.155.149.190",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -95,12 +75,35 @@
         "server_name": "hk1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY",
           "short_id": "bee10b047804c637"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "8199228b-e84b-42a2-9268-e400391e483a",
+      "tls": {
+        "enabled": true,
+        "server_name": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev"
         }
       }
     },
@@ -112,8 +115,8 @@
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -123,6 +126,27 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 09 - xiaohe",
+      "server": "165.154.63.139",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
+          "short_id": "ca4aedd4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
       "server": "152.175.6.229",
       "server_port": 31884,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
@@ -133,26 +157,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaohe",
-      "server": "vipccc.cc",
-      "server_port": 443,
-      "uuid": "5bead32f-a987-4f57-b1a8-6698778facda",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipccc.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ray_proxy",
-        "headers": {
-          "Host": "vipccc.cc"
         }
       }
     },
