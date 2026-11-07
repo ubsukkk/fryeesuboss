@@ -5,61 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 152.69.195.67
-  port: 47878
-  udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 84.247.155.196
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 31.76.91.98
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  server: 149.22.87.240
   port: 443
   udp: true
-  type: vless
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  servername: fuji.etherhub.cc
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 103.75.118.228
   port: 12683
   udp: true
@@ -72,19 +38,51 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 103.75.118.228
-  port: 11452
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: 31.76.91.70
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
+    short-id: bd6f67b6b2152b45
+  servername: fuji.etherhub.cc
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaohe
+  server: 45.32.10.7
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
   server: 167.179.108.225
   port: 443
@@ -94,24 +92,34 @@ proxies:
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 8.209.247.109
-  port: 443
+  server: 64.110.100.50
+  port: 2053
   udp: true
-  type: hysteria2
-  password: usqmqUKJFIlCmvkCNSY64L3k
-  sni: bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Uj6mzD2Qjr9PN0nfBCR2-4KyWm-8vddROou39LN6BXM
+    short-id: d7953572
+  servername: www.developer.nvidia.com
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: 45.32.10.7
-  port: 443
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 (Japan) 13 - xiaohe
   server: 3.114.220.22
-  port: 19645
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -130,30 +138,6 @@ proxies:
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - xiaohe
   server: freedom.chenlan.top
   port: 12765
   udp: true
@@ -161,7 +145,22 @@ proxies:
   password: STYyftThFn
   sni: freedom.chenlan.top
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
+- name: 🇯🇵 日本 (Japan) 16 - xiaohe
+  server: 154.31.112.237
+  port: 26418
+  udp: true
+  type: vless
+  uuid: 4a98013d-7ccb-477b-b613-39a3cff12144
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 (Japan) 17 - xiaohe
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -173,7 +172,150 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 18 - xiaohe
+  server: 104.21.0.1
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: 🇯🇵 日本 (Japan) 19 - xiaohe
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 20 - xiaohe
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 (Japan) 21 - xiaohe
+  server: 162.159.254.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 22 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
+  tls: true
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+- name: 🇯🇵 日本 (Japan) 23 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 8199228b-e84b-42a2-9268-e400391e483a
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+- name: 🇯🇵 日本 (Japan) 24 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: a32f3ec6-d776-450e-9d97-9e2deb6c8421
+  tls: true
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+- name: 🇯🇵 日本 (Japan) 25 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
+  tls: true
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+- name: 🇯🇵 日本 (Japan) 26 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+- name: 🇯🇵 日本 (Japan) 27 - xiaohe
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
+  tls: true
+  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -197,6 +339,15 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - xiaohe
   - 🇯🇵 日本 (Japan) 17 - xiaohe
   - 🇯🇵 日本 (Japan) 18 - xiaohe
+  - 🇯🇵 日本 (Japan) 19 - xiaohe
+  - 🇯🇵 日本 (Japan) 20 - xiaohe
+  - 🇯🇵 日本 (Japan) 21 - xiaohe
+  - 🇯🇵 日本 (Japan) 22 - xiaohe
+  - 🇯🇵 日本 (Japan) 23 - xiaohe
+  - 🇯🇵 日本 (Japan) 24 - xiaohe
+  - 🇯🇵 日本 (Japan) 25 - xiaohe
+  - 🇯🇵 日本 (Japan) 26 - xiaohe
+  - 🇯🇵 日本 (Japan) 27 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -220,5 +371,14 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - xiaohe
   - 🇯🇵 日本 (Japan) 17 - xiaohe
   - 🇯🇵 日本 (Japan) 18 - xiaohe
+  - 🇯🇵 日本 (Japan) 19 - xiaohe
+  - 🇯🇵 日本 (Japan) 20 - xiaohe
+  - 🇯🇵 日本 (Japan) 21 - xiaohe
+  - 🇯🇵 日本 (Japan) 22 - xiaohe
+  - 🇯🇵 日本 (Japan) 23 - xiaohe
+  - 🇯🇵 日本 (Japan) 24 - xiaohe
+  - 🇯🇵 日本 (Japan) 25 - xiaohe
+  - 🇯🇵 日本 (Japan) 26 - xiaohe
+  - 🇯🇵 日本 (Japan) 27 - xiaohe
 rules:
 - MATCH,PROXIES
