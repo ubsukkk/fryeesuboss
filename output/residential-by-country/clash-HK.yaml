@@ -9,8 +9,8 @@ proxies:
   port: 443
   udp: true
   type: hysteria2
-  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  sni: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

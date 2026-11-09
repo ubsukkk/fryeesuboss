@@ -8,10 +8,10 @@
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
       "server": "112.120.123.140",
       "server_port": 443,
-      "password": "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9",
+      "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com",
+        "server_name": "7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com",
         "insecure": false
       }
     },
