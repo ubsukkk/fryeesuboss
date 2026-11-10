@@ -5,14 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -22,19 +15,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 04 - xiaohe
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -45,6 +27,32 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 103.172.116.191
+  port: 10303
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
+    short-id: f96b3b17a0f5b1fe
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0204
 proxy-groups:
 - name: PROXIES
   type: select
