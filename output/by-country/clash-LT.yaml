@@ -6,61 +6,54 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
-  port: 9086
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.84
   port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   server: 84.32.209.103
   port: 443
   udp: true
@@ -69,22 +62,10 @@ proxies:
   tls: true
   servername: edge-lt.lindenpixel.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
-  server: 45.81.252.143
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 53555197-bf0a-49e6-bea1-211fcfc1d962
-  tls: true
-  servername: germany3.banovano.space
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,8 +79,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,7 +92,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
 rules:
 - MATCH,PROXIES

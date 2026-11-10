@@ -15,11 +15,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "pcloud.z-tas.com"
         }
