@@ -6,43 +6,23 @@
     {
       "type": "vless",
       "tag": "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
-      "server": "93.95.226.159",
-      "server_port": 28150,
-      "uuid": "b4e69d67-9d41-417c-b465-ebf1591fb792",
+      "server": "8.6.112.0",
+      "server_port": 8443,
+      "uuid": "8eb92a78-ec8d-4ff6-8a2d-8b801367be87",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo",
-          "short_id": "06"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇸 冰岛 (Iceland) 02 - xiaohe",
-      "server": "191.44.112.170",
-      "server_port": 443,
-      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
-      "tls": {
-        "enabled": true,
-        "server_name": "orbylume.my.to",
+        "server_name": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/tvpn-tor/is",
+        "path": "/?ed=2560",
         "headers": {
-          "Host": "orbylume.my.to"
+          "Host": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV"
         }
       }
     },
@@ -51,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
-        "🇮🇸 冰岛 (Iceland) 02 - xiaohe"
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - xiaohe",
-        "🇮🇸 冰岛 (Iceland) 02 - xiaohe"
+        "🇮🇸 冰岛 (Iceland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
