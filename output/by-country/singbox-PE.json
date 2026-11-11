@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-      "server": "216.106.191.201",
-      "server_port": 10403,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "tag": "🇵🇪 秘鲁 (Peru) 01 - xiaohe",
+      "server": "23.95.72.244",
+      "server_port": 50122,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ",
-          "short_id": "6aa50b0cc8d23464"
+          "public_key": "a9XavLXaCvwAvMpMWT3XlJ_MvXDd41cA7Mp-DiN6WCo",
+          "short_id": "79c25836ab103a48"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
