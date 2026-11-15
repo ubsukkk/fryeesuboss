@@ -18,31 +18,17 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇵🇱 波兰 (Poland) 02 (家宽) - xiaohe
-  server: 185.86.145.55
-  port: 10470
-  udp: true
-  type: vless
-  uuid: 3ecbd833-40d8-4ddb-b80b-a7c4628ec7e5
-  tls: true
-  servername: wn-pl4.static-s3.org
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: wn-adaptcloud
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
