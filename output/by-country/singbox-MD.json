@@ -4,19 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
-      "server": "sclass-c1.catcat321.com",
-      "server_port": 20051,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "176.123.11.43",
+      "server_port": 443,
+      "uuid": "c1208c5a-2350-4506-affd-fc41b4319286",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true,
+        "server_name": "bundledispatch.ratethatrestaurant.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media/ws/"
       }
     },
     {
@@ -24,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
