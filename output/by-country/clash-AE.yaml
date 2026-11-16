@@ -5,51 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 151.241.19.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 130.49.161.70
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 95.174.68.188
-  port: 14430
+  server: 45.86.228.39
+  port: 443
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6_gm-7Bn-4wN79POTNyDJrJvPh1I5SSiO85zMKpKRUI
+    short-id: 29967a52
+  servername: ae1.gofizzin.com
+  client-fingerprint: edge
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
+  server: nl41.homelab-cdn.cloud
+  port: 8443
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
+  tls: true
+  reality-opts:
+    public-key: NW2c4t6gXODenb0_Mo5Qf-1nrJr5xFQm30zf-IVfHjY
+    short-id: 08
+  servername: nl41.homelab-cdn.cloud
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
