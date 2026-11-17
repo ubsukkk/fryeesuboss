@@ -13,6 +13,17 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 99.86.77.123
+  port: 80
+  udp: true
+  type: vless
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: 203.146.170.195
   port: 443
   udp: true
@@ -25,17 +36,6 @@ proxies:
     short-id: faaf02e8469f34
   servername: th1.gofizzin.com
   client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 99.86.77.123
-  port: 80
-  udp: true
-  type: vless
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dcm4kwis2exkw.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
