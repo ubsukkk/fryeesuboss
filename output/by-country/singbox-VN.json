@@ -13,6 +13,27 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+      "server": "mngd.connainho.lol",
+      "server_port": 59736,
+      "uuid": "4ff754c4-a405-401b-81ba-6241fbbb9314",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zos_i17fmOY1oBrudr6mlL8MJClNuBXvjdOxZ4JK2lI",
+          "short_id": "cab2f4e8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 03 - xiaohe",
       "server": "zfapi.zalolink.com",
       "server_port": 55688,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -37,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
       ]
     },
     {
@@ -45,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
