@@ -11,6 +11,14 @@ proxies:
   type: vless
   uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 - name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  server: xvxn1hkzf.mateflora.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: xvxn1hkzf.mateflora.com
+  skip-cert-verify: true
+- name: 🇻🇳 越南 (Vietnam) 03 - xiaohe
   server: 103.163.24.22
   port: 56026
   udp: true
@@ -29,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
   - 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaohe
   - 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 03 - xiaohe
 rules:
 - MATCH,PROXIES

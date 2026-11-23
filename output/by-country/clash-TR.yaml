@@ -5,24 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: cadrin.wtf
+  server: 188.225.36.219
   port: 443
   udp: true
   type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   tls: true
-  servername: cadrin.wtf
+  servername: olvento.space
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: cache.sync.v1
+    grpc-service-name: olvento.sync.v1
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: chatgpt.com
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   tls: true
   servername: sinavm3.soft10.ir
   skip-cert-verify: false
