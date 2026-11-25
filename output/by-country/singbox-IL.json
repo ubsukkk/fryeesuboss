@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -25,42 +25,33 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "129.159.156.109",
-      "server_port": 50160,
-      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
-      "server": "8a2e72t.nl11.h1clayd.click",
+      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
+      "server": "164.37.224.245",
       "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "8a2e72t.nl11.h1clayd.click",
+        "server_name": "961ec0g.nl13.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
-          "short_id": "8d0d0679f42ffd98"
+          "public_key": "xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA",
+          "short_id": "6d289ff0f47c0aac"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "7d5abcd7d8a1"
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
-      "server": "717252g.nl8.h1clayd.click",
+      "tag": "🇮🇱 以色列 (Israel) 03 - xiaohe",
+      "server": "195.206.235.139",
       "server_port": 443,
       "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
@@ -68,7 +59,7 @@
         "server_name": "717252g.nl8.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -82,6 +73,39 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 05 - xiaohe",
+      "server": "195.206.235.34",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "8a2e72t.nl11.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA",
+          "short_id": "8d0d0679f42ffd98"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,7 +113,8 @@
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
         "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 04 - xiaohe",
+        "🇮🇱 以色列 (Israel) 05 - xiaohe"
       ]
     },
     {
@@ -99,7 +124,8 @@
         "🇮🇱 以色列 (Israel) 01 - xiaohe",
         "🇮🇱 以色列 (Israel) 02 - xiaohe",
         "🇮🇱 以色列 (Israel) 03 - xiaohe",
-        "🇮🇱 以色列 (Israel) 04 - xiaohe"
+        "🇮🇱 以色列 (Israel) 04 - xiaohe",
+        "🇮🇱 以色列 (Israel) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
