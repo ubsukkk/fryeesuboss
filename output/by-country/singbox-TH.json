@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
       "server": "108.138.26.63",
       "server_port": 80,
       "uuid": "05f53797-bd04-4006-8a78-41c071e67837",
@@ -24,6 +16,14 @@
           "Host": "d27g7kjkk3cw22.cloudfront.net"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
