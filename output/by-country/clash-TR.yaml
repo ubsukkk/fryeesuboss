@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
+  server: leviko-tr3795.shopingggg.ir
   port: 50738
   udp: true
   type: vless
@@ -15,12 +15,12 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: tr.subscriptionservice.ir
+  server: 107.181.155.27
   port: 2089
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
 proxy-groups:
 - name: PROXIES
   type: select

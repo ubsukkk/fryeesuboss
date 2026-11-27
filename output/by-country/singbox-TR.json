@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "143.246.136.128",
+      "server": "leviko-tr3795.shopingggg.ir",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -26,10 +26,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "tr.subscriptionservice.ir",
+      "server": "107.181.155.27",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
-      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+      "password": "T199MCnogZBKi0QJdcSgUnoL3U9wl7t1"
     },
     {
       "type": "selector",

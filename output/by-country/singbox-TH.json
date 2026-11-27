@@ -12,18 +12,34 @@
       "security": "auto"
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
+      "server": "108.138.26.63",
+      "server_port": 80,
+      "uuid": "05f53797-bd04-4006-8a78-41c071e67837",
+      "transport": {
+        "type": "ws",
+        "path": "/tikvpn2/",
+        "headers": {
+          "Host": "d27g7kjkk3cw22.cloudfront.net"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
