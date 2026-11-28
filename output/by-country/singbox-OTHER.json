@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.172.155",
+      "server": "104.21.71.249",
       "server_port": 443,
       "uuid": "419032d7-2247-49c9-85c8-cc454b7c11d6",
       "tls": {
@@ -23,21 +23,22 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.19.33.25",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "server": "104.21.91.53",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
